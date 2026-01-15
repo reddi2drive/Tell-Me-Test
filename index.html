@@ -494,7 +494,7 @@ const QS_PER_ATTEMPT_DEFAULT = 14;
 
  const QUESTION_BANK = [  
 { id:"tm-01", category:"Tell Me – Vehicle Safety Checks", 
- q:"How would you check that the brakes are working before starting a journey?",
+ q:"How would you check that the brakes are working before starting a journey? Select one.",
 choices:["Press the pedal once hard",
          "Press and ensure it does not feel spongy or slack",
          "Drive quickly to test",
@@ -507,11 +507,13 @@ correct:1, explain:"Brakes should feel firm when pressed repeatedly and not spon
 { id:"tm-02", category:"Tell Me – Vehicle Safety Checks",
  q:"Where would you find the information for the recommended tyre pressures for your car and how should tyre pressures be checked?",
 choices:["Inside the fuel flap only",
-         "Manufacturer handbook and check with a reliable gauge when tyres are cold including the spare",
+         "Manufacturers handbook",
          "Dashboard menu",
-         "Service history"
+         "Service history",
+         "Check with a reliable gauge when tyres are cold including the spare"
         ],
-correct:1, explain:"Use the manufacturers guide, check with a reliable gauge when tyres are cold and don’t forget the spare, refitting valve caps.",
+ requiredSelections: 2,
+correct:[1,4],explain:"Use the manufacturers guide, check with a reliable gauge when tyres are cold and don’t forget the spare, refitting valve caps.",
  image:"" 
 },
   
