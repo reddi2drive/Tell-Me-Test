@@ -532,10 +532,13 @@ correct:1, explain:"The rigid part should be at least as high as eyes or top of 
 { id:"tm-04", category:"Tell Me – Vehicle Safety Checks", 
  q:"How would you check the tyres have sufficient tread depth and that the general condition is safe for use on the road?",
 choices:["At least 1mm tread",
-         "1.6mm across central 3/4 and whole circumference, no cuts or bulges",
+         "1.6mm across central 3/4 and whole circumference",
          "Only front tyres",
+         "no cuts or bulges",
          "Check MOT only"
         ],
+ requiredSelections: 2,
+correct:[1,3],
 correct:1, explain:"Legal minimum is 1.6mm across central three‑quarters and around the entire tyre with no cuts or bulges.", 
  image:"" 
 },
