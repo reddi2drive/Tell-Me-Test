@@ -493,61 +493,159 @@ const QS_PER_ATTEMPT_DEFAULT = 14;
 // =========================================================
 
  const QUESTION_BANK = [  
-{ id:"tm-01", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check that the brakes are working before starting a journey.",
-choices:["Press the pedal once hard","Press repeatedly to ensure it feels firm and does not feel spongy or slack","Drive quickly to test","Check ABS light only"],
-correct:1, explain:"Brakes should feel firm when pressed repeatedly and not spongy or slack. The car should not pull to one side when you set off.", image:"" },
+{ id:"tm-01", category:"Tell Me – Vehicle Safety Checks", 
+ q:"How would you check that the brakes are working before starting a journey?",
+choices:["Press the pedal once hard",
+         "Press and ensure it does not feel spongy or slack",
+         "Drive quickly to test",
+         "Check ABS light only"
+        ],
+correct:1, explain:"Brakes should feel firm when pressed repeatedly and not spongy or slack. The car should not pull to one side when you set off.",
+ image:""
+},
   
-{ id:"tm-02", category:"Tell Me – Vehicle Safety Checks", q:"Tell me where you’d find the information for the recommended tyre pressures for this car and how tyre pressures should be checked.",
-choices:["Inside the fuel flap only","Manufacturer handbook and check with a reliable gauge when tyres are cold including the spare","Dashboard menu","Service history"],
-correct:1, explain:"Use the manufacturer guide, check with a reliable gauge when tyres are cold and don’t forget the spare, refitting valve caps.", image:"" },
+{ id:"tm-02", category:"Tell Me – Vehicle Safety Checks",
+ q:"Where would you find the information for the recommended tyre pressures for this car and how tyre pressures should be checked?",
+choices:["Inside the fuel flap only",
+         "Manufacturer handbook and check with a reliable gauge when tyres are cold including the spare",
+         "Dashboard menu",
+         "Service history"
+        ],
+correct:1, explain:"Use the manufacturer guide, check with a reliable gauge when tyres are cold and don’t forget the spare, refitting valve caps.",
+ image:"" 
+},
   
-{ id:"tm-03", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you make sure your head restraint is correctly adjusted.",
-choices:["Top should be below ears","Rigid part at least as high as eyes or top of ears and close to head","Only adjust while driving","Must touch head"],
-correct:1, explain:"The rigid part should be at least as high as eyes or top of ears and as close to the back of the head as comfortable.", image:"" },
+{ id:"tm-03", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you make sure your head restraint is correctly adjusted.",
+choices:["Top should be below ears",
+         "Rigid part at least as high as eyes or top of ears and close to head",
+         "Only adjust while driving",
+         "Must touch head"
+        ],
+correct:1, explain:"The rigid part should be at least as high as eyes or top of ears and as close to the back of the head as comfortable.", 
+ image:"" 
+},
   
-{ id:"tm-04", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check the tyres have sufficient tread depth and are safe.",
-choices:["At least 1mm tread","1.6mm across central 3/4 and whole circumference, no cuts or bulges","Only front tyres","Check MOT only"],
-correct:1, explain:"Legal minimum is 1.6mm across central three‑quarters and around the entire tyre with no cuts or bulges.", image:"" },
+{ id:"tm-04", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d check the tyres have sufficient tread depth and are safe.",
+choices:["At least 1mm tread",
+         "1.6mm across central 3/4 and whole circumference, no cuts or bulges",
+         "Only front tyres",
+         "Check MOT only"
+        ],
+correct:1, explain:"Legal minimum is 1.6mm across central three‑quarters and around the entire tyre with no cuts or bulges.", 
+ image:"" 
+},
   
-{ id:"tm-05", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check that the headlights and tail lights are working.",
-choices:["Use dashboard warning only","Turn on lights and walk round vehicle","Ask someone else","Check at MOT only"],
-correct:1, explain:"Turn on lights and walk round vehicle to visually confirm.", image:"" },
+{ id:"tm-05", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d check that the headlights and tail lights are working.",
+choices:["Use dashboard warning only",
+         "Turn on lights and walk round vehicle",
+         "Ask someone else",
+         "Check at MOT only"
+        ],
+correct:1, explain:"Turn on lights and walk round vehicle to visually confirm.",
+ image:"" 
+},
   
-{ id:"tm-06", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d know if there was a problem with your anti-lock braking system.",
-choices:["Steering feels light","ABS warning light illuminates","Brake squeal","Speedometer stops"],
-correct:1, explain:"A fault is indicated by the ABS warning light.", image:"" },
+{ id:"tm-06", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d know if there was a problem with your anti-lock braking system.",
+choices:["Steering feels light",
+         "ABS warning light illuminates",
+         "Brake squeal",
+         "Speedometer stops"
+        ],
+correct:1, explain:"A fault is indicated by the ABS warning light.", 
+ image:"" 
+},
   
-{ id:"tm-07", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check the direction indicators are working.",
-choices:["Use dashboard only","Operate switch and walk round vehicle","Ask examiner","Only when warning shows"],
-correct:1, explain:"Operate indicators and walk round vehicle to check.", image:"" },
+{ id:"tm-07", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d check the direction indicators are working.",
+choices:["Use dashboard only",
+         "Operate switch and walk round vehicle",
+         "Ask examiner",
+         "Only when warning shows"
+        ],
+correct:1, explain:"Operate indicators and walk round vehicle to check.",
+ image:"" 
+},
   
-{ id:"tm-08", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check the brake lights are working.",
-choices:["Press brake and look in mirror only","Press brake and use reflections or ask someone to help","Only dashboard light","MOT history"],
-correct:1, explain:"Operate the brake pedal and use reflections or ask someone to help.", image:"" },
+{ id:"tm-08", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d check the brake lights are working.", 
+choices:["Press brake and look in mirror only",
+         "Press brake and use reflections or ask someone to help",
+         "Only dashboard light",
+         "MOT history"
+        ],
+correct:1, explain:"Operate the brake pedal and use reflections or ask someone to help.",
+ image:"" 
+},
   
-{ id:"tm-09", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d check the power-assisted steering is working.",
-choices:["Drive fast","Gentle pressure on wheel while starting engine or feel for light steering when moving","Check tyre pressure","Turn engine off"],
-correct:1, explain:"Maintain gentle pressure while starting or feel for light steering just after moving off.", image:"" },
+{ id:"tm-09", category:"Tell Me – Vehicle Safety Checks",
+ q:"Tell me how you’d check the power-assisted steering is working.",
+choices:["Drive fast",
+         "Gentle pressure on wheel while starting engine or feel for light steering when moving",
+         "Check tyre pressure",
+         "Turn engine off"
+        ],
+correct:1, explain:"Maintain gentle pressure while starting or feel for light steering just after moving off.", 
+ image:"" 
+},
   
-{ id:"tm-10", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you’d switch on the rear fog light and when you’d use it.",
-choices:["Any time it rains","With dipped headlights on, check warning light, use only in seriously reduced visibility","Only at night","Engine off"],
-correct:1, explain:"Operate with dipped headlights, check warning light. Use only in seriously reduced visibility.", image:"" },
+{ id:"tm-10", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you’d switch on the rear fog light and when you’d use it.",
+choices:["Any time it rains",
+         "With dipped headlights on, check warning light, use only in seriously reduced visibility",
+         "Only at night",
+         "Engine off"
+        ],
+correct:1, explain:"Operate with dipped headlights, check warning light. Use only in seriously reduced visibility.", 
+ image:"" 
+},
   
-{ id:"tm-11", category:"Tell Me – Vehicle Safety Checks", q:"Tell me how you switch from dipped to main beam and know it’s on.",
-choices:["Press hazard switch","Operate control and check main beam warning light","Engine off","Pull handbrake"],
-correct:1, explain:"Operate the control and confirm using the main beam warning light.", image:"" },
+{ id:"tm-11", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Tell me how you switch from dipped to main beam and know it’s on.",
+choices:["Press hazard switch",
+         "Operate control and check main beam warning light",
+         "Engine off",
+         "Pull handbrake"
+        ],
+correct:1, explain:"Operate the control and confirm using the main beam warning light.", 
+ image:"" 
+},
   
-{ id:"tm-12", category:"Tell Me – Vehicle Safety Checks", q:"Open the bonnet and tell me how you’d check the engine has sufficient oil.",
-choices:["Check filler cap","Use dipstick and ensure level between min and max","Wait for warning","Look underneath"],
-correct:1, explain:"Use the dipstick and ensure oil is between min and max markers.", image:"" },
+{ id:"tm-12", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Open the bonnet and tell me how you’d check the engine has sufficient oil.",
+choices:["Check filler cap",
+         "Use dipstick and ensure level between min and max",
+         "Wait for warning",
+         "Look underneath"
+        ],
+correct:1, explain:"Use the dipstick and ensure oil is between min and max markers.", 
+ image:""
+},
   
-{ id:"tm-13", category:"Tell Me – Vehicle Safety Checks", q:"Open the bonnet and tell me how you’d check engine coolant.",
-choices:["Remove cap hot","Check expansion tank between min and max when cold","Ignore","Dashboard only"],
-correct:1, explain:"Check expansion tank between min and max when engine is cold.", image:"" },
+{ id:"tm-13", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Open the bonnet and tell me how you’d check engine coolant.",
+choices:["Remove cap hot",
+         "Check expansion tank between min and max when cold",
+         "Ignore",
+         "Dashboard only"
+        ],
+correct:1, explain:"Check expansion tank between min and max when engine is cold.", 
+ image:"" 
+},
   
-{ id:"tm-14", category:"Tell Me – Vehicle Safety Checks", q:"Open the bonnet and tell me how you’d check hydraulic brake fluid.",
-choices:["Check tyre","Check reservoir between high and low markings","Use warning light only","No check"],
-correct:1, explain:"Check brake fluid reservoir is between high and low marks.", image:"" }
+{ id:"tm-14", category:"Tell Me – Vehicle Safety Checks", 
+ q:"Open the bonnet and tell me how you’d check hydraulic brake fluid.",
+choices:["Check tyre",
+         "Check reservoir between high and low markings",
+         "Use warning light only",
+         "No check"
+        ],
+correct:1, explain:"Check brake fluid reservoir is between high and low marks.", 
+ image:"" 
+}
 ];
 
 
