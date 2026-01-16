@@ -494,13 +494,16 @@ const QS_PER_ATTEMPT_DEFAULT = 14;
 
  const QUESTION_BANK = [  
 { id:"tm-01", category:"Tell Me – Vehicle Safety Checks", 
- q:"How would you check that the brakes are working before starting a journey? Select one.",
-choices:["Press the pedal once hard",
+ q:"How would you check that the brakes are working before starting a journey? Select two.",
+ choices:["Press the pedal once hard",
          "Press and ensure it does not feel spongy or slack",
          "Drive quickly to test",
-         "Check ABS light only"
+         "Check ABS light only",
+         "The vehicle shouldn't pull to one side"
         ],
-correct:1, explain:"Brakes should feel firm when pressed repeatedly and not spongy or slack. The car should not pull to one side when you set off.",
+  requiredSelections: 2,
+correct:[1,4],
+explain:"Brakes should feel firm when pressed and not spongy or slack. The car should not pull to one side when you set off.",
  image:""
 },
   
@@ -519,7 +522,7 @@ correct:[1,4],
 },
   
 { id:"tm-03", category:"Tell Me – Vehicle Safety Checks", 
- q:"How would you make sure your head restraint is correctly adjusted? Select One.",
+ q:"How would you make sure your head restraint is correctly adjusted?",
 choices:["Top should be below ears",
          "Rigid part at least as high as eyes or top of ears and close to head",
          "Only adjust while driving",
