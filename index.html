@@ -317,6 +317,17 @@ body{
   color:var(--muted);
   margin-top:4px;
 }
+   /* Force Correct / Wrong label to top-right on ALL review items */
+#reviewScreen .reviewItem {
+  position: relative;
+}
+
+#reviewScreen .reviewItem .result {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
 
 /* --- Hide the category pill inside each Review item (keeps the "Show:" filter pill) --- */
 #reviewScreen .reviewItem .tag{ display:none !important; }
